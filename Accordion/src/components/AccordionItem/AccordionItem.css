@@ -1,0 +1,26 @@
+.item{
+    background-color: #f0ebe1;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+}
+  
+.question{
+    color: #85662b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+  
+.answer{
+    color: #8b7f75;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .5s cubic-bezier(0,1,0,1);
+}
+  
+.answer.show{
+    height: auto;
+    transition: all .5s cubic-bezier(0,1,0,1);
+    max-height: 9999px;
+}
